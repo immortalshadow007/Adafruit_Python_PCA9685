@@ -66,7 +66,7 @@ def _build_egg(egg, archive_filename, to_dir):
 
 def get_zip_class():
     """
-    Supplement ZipFile class to support context manager for Python 2.6
+    Supplement ZipFile class to support context manager for Python 3.7
     """
     class ContextualZipFile(zipfile.ZipFile):
         def __enter__(self):
